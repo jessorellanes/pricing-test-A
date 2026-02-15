@@ -44,7 +44,7 @@
             padding: 1rem 1.5rem;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: end;
         }
         .logo {
             display: flex;
@@ -405,19 +405,17 @@
                 <h1>Choose your plan</h1>
                 <p class="subtitle">Fast wireframing and prototyping for better product decisions</p>
                 <p class="tagline">Built for product teams, <strong>No steep learning curve, no design hassle.</strong></p>
-                <div style="text-align:center; margin-top: 1.5rem;">
-                    <div class="billing-toggle">
-                        <button class="active" @click="page = 'annual'">Annual billing</button>
-                        <button @click="page = 'monthly'">Monthly billing</button>
-                    </div>
-                </div>
             </div>
-
             <div class="info-banner">
                 <p>Pricing is <strong>per editor</strong> (people who create and edit). Viewers and commenters are always free.</p>
                 <p>Additional AI credits can be bought for $5 for 1,000 credits (enough to generate around 70 screens).</p>
             </div>
-
+            <div style="text-align:center; margin-top: 1.5rem;">
+                    <div class="billing-toggle">
+                        <button class="active" @click="page = 'annual'">Annual billing</button>
+                        <button @click="page = 'monthly'">Monthly billing</button>
+                    </div>
+             </div>
             <div class="cards-grid">
                 <!-- Pro Annual -->
                 <div class="card">
@@ -507,17 +505,16 @@
                 <h1>Choose your plan</h1>
                 <p class="subtitle">Fast wireframing and prototyping for better product decisions</p>
                 <p class="tagline">Built for product teams, <strong>No steep learning curve, no design hassle.</strong></p>
+            <div class="info-banner">
+                <p>Pricing is <strong>per editor</strong> (people who create and edit). Viewers and commenters are always free.</p>
+                <p>Additional AI credits can be bought for $5 for 1,000 credits (enough to generate around 70 screens).</p>
+            </div>
                 <div style="text-align:center; margin-top: 1.5rem;">
                     <div class="billing-toggle">
                         <button @click="page = 'annual'">Annual billing</button>
                         <button class="active" @click="page = 'monthly'">Monthly billing</button>
                     </div>
                 </div>
-            </div>
-
-            <div class="info-banner">
-                <p>Pricing is <strong>per editor</strong> (people who create and edit). Viewers and commenters are always free.</p>
-                <p>Additional AI credits can be bought for $5 for 1,000 credits (enough to generate around 70 screens).</p>
             </div>
 
             <div class="cards-grid">
